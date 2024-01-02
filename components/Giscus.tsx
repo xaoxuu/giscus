@@ -89,20 +89,6 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
     <div className="color-text-primary gsc-main">
       {reactionsEnabled && !data.isLoading && (shouldCreateDiscussion || !data.error) ? (
         <div className="gsc-reactions">
-          <h4 className="gsc-reactions-count">
-            {shouldCreateDiscussion && !data.reactionCount ? (
-              t('reactions', { count: 0 })
-            ) : (
-              <a
-                href={data.discussion.url}
-                target="_blank"
-                rel="noreferrer noopener nofollow"
-                className="color-text-primary"
-              >
-                {t('reactions', { count: data.reactionCount || 0 })}
-              </a>
-            )}
-          </h4>
           <div className="flex flex-auto items-center justify-center gap-2 text-sm mt-2">
             <ReactButtons
               subjectId={data.discussion.id}
@@ -133,23 +119,6 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
                 </a>
               )}
             </h4>
-            {shouldShowBranding ? (
-              <em className="color-text-secondary text-sm">
-                <Trans
-                  i18nKey="common:poweredBy"
-                  components={{
-                    a: (
-                      <a
-                        href="https://giscus.app"
-                        target="_blank"
-                        rel="noreferrer noopener nofollow"
-                        className="link-secondary"
-                      />
-                    ),
-                  }}
-                />
-              </em>
-            ) : null}
           </div>
           {data.totalCommentCount > 0 ? (
             <ul className="gsc-right-header BtnGroup">
