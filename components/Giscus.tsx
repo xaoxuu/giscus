@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { AuthContext, ConfigContext } from '../lib/context';
-import { useGiscusTranslation } from '../lib/i18n';
+import { Trans, useGiscusTranslation } from '../lib/i18n';
 import { emitData } from '../lib/messages';
 import { CommentOrder, IMetadataMessage } from '../lib/types/giscus';
 import { useFrontBackDiscussion } from '../services/giscus/discussions';
