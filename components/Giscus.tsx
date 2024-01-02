@@ -70,6 +70,7 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
   );
 
   const shouldCreateDiscussion = data.isNotFound && !number;
+  const shouldShowBranding = !!data.discussion.url;
 
   const shouldShowCommentBox =
     (data.isRateLimited && !token) ||
@@ -207,5 +208,22 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
         {shouldShowCommentBox && inputPosition !== 'top' ? mainCommentBox : null}
       </div>
     </div>
+    {shouldShowBranding ? (
+      <em className="color-text-secondary text-sm">
+        <Trans
+          i18nKey="common:poweredBy"
+          components={{
+            a: (
+              <a
+                href="https://giscus.app"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                className="link-secondary"
+              />
+            ),
+          }}
+        />
+      </em>
+    ) : null}
   );
 }
