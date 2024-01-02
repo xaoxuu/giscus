@@ -514,6 +514,10 @@ img.emoji {
   @apply w-full flex flex-col gap-8;
 }
 
+.gsc-main>.text-sm {
+  text-align: right;
+}
+
 .gsc-reactions {
   @apply flex flex-col justify-center flex-auto;
 }
