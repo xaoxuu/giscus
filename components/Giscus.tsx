@@ -72,9 +72,6 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
   const shouldCreateDiscussion = data.isNotFound && !number;
   const shouldShowBranding = !!data.discussion.url;
 
-  const shouldShowReplyCount =
-    !data.error && !data.isNotFound && !data.isLoading && data.totalReplyCount > 0;
-
   const shouldShowCommentBox =
     (data.isRateLimited && !token) ||
     (!data.isLoading && !data.isLocked && (!data.error || (data.isNotFound && !number)));
@@ -136,17 +133,6 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
                 </a>
               )}
             </h4>
-            {shouldShowReplyCount ? (
-              <>
-                <h4 className="gsc-comments-count-separator">·</h4>
-                <h4 className="gsc-replies-count">
-                  {t('replies', {
-                    count: data.totalReplyCount,
-                    plus: data.numHidden > 0 ? '+' : '',
-                  })}
-                </h4>
-              </>
-            ) : null}
             {shouldShowBranding ? (
               <em className="color-text-secondary text-sm">
                 <Trans
