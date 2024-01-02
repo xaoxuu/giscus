@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
 import { AuthContext, ConfigContext } from '../lib/context';
-import { Trans, useGiscusTranslation } from '../lib/i18n';
+import { useGiscusTranslation } from '../lib/i18n';
 import { emitData } from '../lib/messages';
 import { CommentOrder, IMetadataMessage } from '../lib/types/giscus';
 import { useFrontBackDiscussion } from '../services/giscus/discussions';
@@ -70,7 +70,6 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
   );
 
   const shouldCreateDiscussion = data.isNotFound && !number;
-  const shouldShowBranding = !!data.discussion.url;
 
   const shouldShowCommentBox =
     (data.isRateLimited && !token) ||
