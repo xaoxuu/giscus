@@ -23,6 +23,7 @@ module.exports = {
       },
       fontFamily: {
         sans: [
+          '"LXGW WenKai Screen"',
           '-apple-system',
           'BlinkMacSystemFont',
           '"Segoe UI"',
