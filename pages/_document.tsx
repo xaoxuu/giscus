@@ -16,7 +16,7 @@ class CustomDocument extends Document {
     const theme = this.props.__NEXT_DATA__.props.pageProps.theme;
     const resolvedTheme = resolveTheme(theme || 'preferred_color_scheme');
     const themeUrl = getThemeUrl(resolvedTheme, theme);
-
+    const fontUrl = 'https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css';
     return (
       <Html dir={getDir(this.props.locale as AvailableLanguage)}>
         <Head>
@@ -38,7 +38,7 @@ class CustomDocument extends Document {
           <meta name="color-scheme" content="light dark" />
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="stylesheet" href={themeUrl} crossOrigin="anonymous" id="giscus-theme" />
-          <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" media="all" />
+          <link rel="stylesheet" href={fontUrl} media="all" />
         </Head>
         <body>
           <Main />
