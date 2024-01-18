@@ -38,7 +38,6 @@ class CustomDocument extends Document {
           <meta name="color-scheme" content="light dark" />
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="stylesheet" href={themeUrl} crossOrigin="anonymous" id="giscus-theme" />
-          <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/lxgw-wenkai-screen-webfont/1.7.0/style.min.css" media="all" />
         </Head>
         <body>
           <Main />
