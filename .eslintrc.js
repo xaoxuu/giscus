@@ -7,8 +7,6 @@ module.exports = {
     'eslint:recommended',
     'plugin:jsx-a11y/recommended',
     'next/core-web-vitals',
-    'plugin:prettier/recommended',
-    "prettier/prettier",
   ],
   plugins: ['@typescript-eslint'],
   rules: {
