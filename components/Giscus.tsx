@@ -115,7 +115,10 @@ export default function Giscus({ onDiscussionCreateRequest, onError }: IGiscusPr
                   rel="noreferrer noopener nofollow"
                   className="color-text-primary"
                 >
-                  {t('comments', { count: data.totalCommentCount + data.totalReplyCount })}
+                  {t('comments', {
+                    count: data.totalCommentCount + data.totalReplyCount,
+                    plus: data.numHidden > 0 ? '+' : '',
+                  })}
                 </a>
               )}
             </h4>
