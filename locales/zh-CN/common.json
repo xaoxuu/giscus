@@ -4,7 +4,7 @@
   },
   "comment": "评论",
   "comments": {
-    "other": "{{count}} 条评论"
+    "other": "{{count}}{{plus}} 条评论"
   },
   "reply": "回复",
   "replies": {
