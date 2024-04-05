@@ -80,6 +80,7 @@ Acest README este disponibil în:
 
 - [Arabic (العربية)](README.ar.md)
 - [Català](README.ca.md)
+- [Dansk](README.da.md)
 - [Deutsch](README.de.md)
 - [English](README.md)
 - [Esperanto](README.eo.md)
@@ -103,6 +104,7 @@ Acest README este disponibil în:
 - [Türkçe](README.tr.md)
 - [Tiếng Việt](README.vi.md)
 - [Українська](README.uk.md)
+- [O'zbek](README.uz.md)
 - [简体中文](README.zh-CN.md)
 - [繁體中文](README.zh-TW.md)
 

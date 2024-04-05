@@ -7,6 +7,27 @@ writing, this is a rolling-release project without any meaningful versioning
 whatsoever. Tags/releases may be created for the sole purpose of documenting
 major updates to the project.
 
+## 2024-02-11
+
+### Added
+
+- Add Cross-Origin Resource Policy support
+  ([#1309](https://github.com/giscus/giscus/pull/1309)).
+
+## 2024-02-10
+
+### Added
+
+- Add Uzbek localization
+  ([#1303](https://github.com/giscus/giscus/pull/1303)).
+
+## 2024-01-06
+
+### Added
+
+- Add Danish localization
+  ([#1277](https://github.com/giscus/giscus/pull/1277)).
+
 ## 2023-12-03
 
 ### Added

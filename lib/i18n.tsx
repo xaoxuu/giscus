@@ -45,6 +45,7 @@ export interface GiscusTranslate<I18Namespace = I18n> {
 export const availableLanguages = {
   ar: 'العربية',
   ca: 'Català',
+  da: 'Dansk',
   de: 'Deutsch',
   en: 'English',
   eo: 'Esperanto',
@@ -68,6 +69,7 @@ export const availableLanguages = {
   tr: 'Türkçe',
   vi: 'Việt Nam',
   uk: 'Українська',
+  uz: "O'zbek",
   'zh-CN': '简体中文',
   'zh-TW': '繁體中文',
 } as const;
@@ -140,6 +142,7 @@ const dateFormat: Intl.DateTimeFormatOptions = {
 const dateFormatters: Record<AvailableLanguage, Intl.DateTimeFormat> = {
   ar: new Intl.DateTimeFormat('ar', dateFormat),
   ca: new Intl.DateTimeFormat('ca', dateFormat),
+  da: new Intl.DateTimeFormat('da', dateFormat),
   de: new Intl.DateTimeFormat('de', dateFormat),
   en: new Intl.DateTimeFormat('en', dateFormat),
   eo: new Intl.DateTimeFormat('eo', dateFormat),
@@ -163,6 +166,7 @@ const dateFormatters: Record<AvailableLanguage, Intl.DateTimeFormat> = {
   tr: new Intl.DateTimeFormat('tr', dateFormat),
   vi: new Intl.DateTimeFormat('vi', dateFormat),
   uk: new Intl.DateTimeFormat('uk', dateFormat),
+  uz: new Intl.DateTimeFormat('uz', dateFormat),
   'zh-CN': new Intl.DateTimeFormat('zh-CN', dateFormat),
   'zh-TW': new Intl.DateTimeFormat('zh-TW', dateFormat),
 };
@@ -175,6 +179,7 @@ const shortDateFormat: Intl.DateTimeFormatOptions = {
 const shortDateFormatters: Record<AvailableLanguage, Intl.DateTimeFormat> = {
   ar: new Intl.DateTimeFormat('ar', shortDateFormat),
   ca: new Intl.DateTimeFormat('ca', shortDateFormat),
+  da: new Intl.DateTimeFormat('da', shortDateFormat),
   de: new Intl.DateTimeFormat('de', shortDateFormat),
   en: new Intl.DateTimeFormat('en', shortDateFormat),
   eo: new Intl.DateTimeFormat('eo', shortDateFormat),
@@ -198,6 +203,7 @@ const shortDateFormatters: Record<AvailableLanguage, Intl.DateTimeFormat> = {
   tr: new Intl.DateTimeFormat('tr', shortDateFormat),
   vi: new Intl.DateTimeFormat('vi', shortDateFormat),
   uk: new Intl.DateTimeFormat('uk', shortDateFormat),
+  uz: new Intl.DateTimeFormat('uz', shortDateFormat),
   'zh-CN': new Intl.DateTimeFormat('zh-CN', shortDateFormat),
   'zh-TW': new Intl.DateTimeFormat('zh-TW', shortDateFormat),
 };
@@ -211,6 +217,7 @@ const shortDateYearFormat: Intl.DateTimeFormatOptions = {
 const shortDateYearFormatters: Record<AvailableLanguage, Intl.DateTimeFormat> = {
   ar: new Intl.DateTimeFormat('ar', shortDateYearFormat),
   ca: new Intl.DateTimeFormat('ca', shortDateYearFormat),
+  da: new Intl.DateTimeFormat('da', shortDateYearFormat),
   de: new Intl.DateTimeFormat('de', shortDateYearFormat),
   en: new Intl.DateTimeFormat('en', shortDateYearFormat),
   eo: new Intl.DateTimeFormat('eo', shortDateYearFormat),
@@ -234,6 +241,7 @@ const shortDateYearFormatters: Record<AvailableLanguage, Intl.DateTimeFormat> = 
   tr: new Intl.DateTimeFormat('tr', shortDateYearFormat),
   vi: new Intl.DateTimeFormat('vi', shortDateYearFormat),
   uk: new Intl.DateTimeFormat('uk', shortDateYearFormat),
+  uz: new Intl.DateTimeFormat('uz', shortDateYearFormat),
   'zh-CN': new Intl.DateTimeFormat('zh-CN', shortDateYearFormat),
   'zh-TW': new Intl.DateTimeFormat('zh-TW', shortDateYearFormat),
 };
@@ -247,6 +255,7 @@ const relativeTimeFormat: Intl.RelativeTimeFormatOptions = {
 const relativeTimeFormatters: Record<AvailableLanguage, Intl.RelativeTimeFormat> = {
   ar: new Intl.RelativeTimeFormat('ar', relativeTimeFormat),
   ca: new Intl.RelativeTimeFormat('ca', relativeTimeFormat),
+  da: new Intl.RelativeTimeFormat('da', relativeTimeFormat),
   de: new Intl.RelativeTimeFormat('de', relativeTimeFormat),
   en: new Intl.RelativeTimeFormat('en', relativeTimeFormat),
   eo: new Intl.RelativeTimeFormat('eo', relativeTimeFormat),
@@ -270,6 +279,7 @@ const relativeTimeFormatters: Record<AvailableLanguage, Intl.RelativeTimeFormat>
   tr: new Intl.RelativeTimeFormat('tr', relativeTimeFormat),
   vi: new Intl.RelativeTimeFormat('vi', relativeTimeFormat),
   uk: new Intl.RelativeTimeFormat('uk', relativeTimeFormat),
+  uz: new Intl.RelativeTimeFormat('uz', relativeTimeFormat),
   'zh-CN': new Intl.RelativeTimeFormat('zh-CN', relativeTimeFormat),
   'zh-TW': new Intl.RelativeTimeFormat('zh-TW', relativeTimeFormat),
 };
